@@ -1,0 +1,31 @@
+{
+  "name": "gch",
+  "version": "0.0.0",
+  "description": "GitLab CI hook for sending build info to HipChat",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.6.0",
+    "nopt": "^2.2.1",
+    "npmlog": "0.0.6",
+    "request": "^2.34.0"
+  },
+  "bin": {
+    "gch": "./bin/cmd.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "GitLab",
+    "CI",
+    "HipChat",
+    "hooks"
+  ],
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/gch"
+  },
+  "homepage": "https://github.com/evanlucas/gch",
+  "bugs": {
+    "url": "https://github.com/evanlucas/gch/issues"
+  }
+}
