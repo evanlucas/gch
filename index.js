@@ -96,6 +96,9 @@ function postNotification(input, cb) {
     cb && cb()
   })
   var form = r.form()
+  var color = input.build_status === 'success'
+    ? 'green'
+    : 'red'
   form.append('color', 'green')
   form.append('message', data)
   form.append('room_id', gl.roomId)
