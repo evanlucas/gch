@@ -65,6 +65,7 @@ function app(req, res) {
 }
 
 function postNotification(input, cb) {
+  var stat = input.build_status
   var data = status(input)+ciUrl(input)
   var start = moment(input.build_started_at)
   var end = moment(input.build_finished_at)
@@ -96,7 +97,7 @@ function postNotification(input, cb) {
     cb && cb()
   })
   var form = r.form()
-  var color = input.build_status === 'success'
+  var color = stat === 'success'
     ? 'green'
     : 'red'
   form.append('color', color)
