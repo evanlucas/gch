@@ -1,6 +1,6 @@
 {
   "name": "gch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GitLab CI hook for sending build info to HipChat",
   "main": "index.js",
   "dependencies": {
